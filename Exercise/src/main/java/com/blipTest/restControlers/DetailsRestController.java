@@ -1,4 +1,4 @@
-package com.blipTest.RestControlers;
+package com.blipTest.restControlers;
 
 import com.blipTest.entities.Details;
 import com.blipTest.services.DetailsService;
@@ -16,7 +16,7 @@ import java.util.concurrent.CompletionStage;
  */
 
 @RestController
-public class DetailsRestControler {
+public class DetailsRestController {
 
     @RequestMapping(value = "/details", method = RequestMethod.GET)
     CompletionStage<ResponseEntity<Collection<Details>>> details() {

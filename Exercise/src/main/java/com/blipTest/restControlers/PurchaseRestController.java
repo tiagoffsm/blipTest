@@ -1,4 +1,4 @@
-package com.blipTest.RestControlers;
+package com.blipTest.restControlers;
 
 import com.blipTest.entities.Details;
 import com.blipTest.entities.Purchase;
@@ -17,7 +17,7 @@ import java.util.concurrent.CompletionStage;
  */
 
 @RestController
-public class PurchaseRestControler {
+public class PurchaseRestController {
 
     @RequestMapping(value = "/purchases", method = RequestMethod.GET)
     CompletionStage<ResponseEntity<Collection<Purchase>>> purchases() {
